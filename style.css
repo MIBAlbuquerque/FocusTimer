@@ -1,0 +1,97 @@
+* {
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --base-color: rgba(50, 50, 56, 1);
+  --btn-bg-color: rgba(225, 225, 230, 1);
+  --bg-color: #ffffff;
+  --btn-select-color: rgba(2, 121, 157, 1);
+  --btn-disabled-color:rgba(50, 50, 56, 0.534);
+  --sound-btn-selected-color: #FFFFFF;
+
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.container {
+  display: flex;
+  gap: 19.2rem;
+}
+
+.controlBtn.disabled svg path{
+  fill: var(--btn-disabled-color) !important;
+}
+
+
+/* Timer */
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  width: 32.1rem;
+  height: 21.3rem;
+  align-self: center;
+}
+
+.timerDisplay {
+  display: flex;
+  font-size: 12.6rem;
+  height: 11.7rem;
+  color: var(--base-color);
+  justify-content: center;
+  
+}
+
+.timerControls {
+  display: flex;
+  gap: 4rem;
+}
+
+.timerControls button {
+  padding: 0;
+}
+
+/* Sons */
+
+.sounds {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+
+}
+
+.sounds button {
+  display: grid;
+  padding: 4.8rem 4.7rem;
+  border-radius: 2.4rem;
+  width: 13.8rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btn-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sounds button.selected{
+  background-color: var(--btn-select-color);
+}
+
+.sounds button.selected svg path {
+  fill: var(--sound-btn-selected-color)
+}
