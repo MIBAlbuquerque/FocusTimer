@@ -7,6 +7,8 @@ import {
   rainBtn,
   coffeeBtn,
   fireBtn,
+  sunBtn,
+  moonBtn,
 } from "./elements.js";
 
 import Sounds from "./sounds.js"
@@ -29,3 +31,6 @@ forestBtn.addEventListener("click", sound.playForest)
 rainBtn.addEventListener("click", sound.playRain)
 coffeeBtn.addEventListener("click", sound.playCoffee)
 fireBtn.addEventListener("click", sound.playFire)
+
+sunBtn.addEventListener("click", timer.darkModeToggle)
+moonBtn.addEventListener("click", timer.darkModeToggle)

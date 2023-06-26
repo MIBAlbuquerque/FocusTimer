@@ -14,16 +14,26 @@
   --btn-disabled-color:rgba(50, 50, 56, 0.534);
   --sound-btn-selected-color: #FFFFFF;
 
+
+  --bg-color-dark:rgba(18, 18, 20, 1);
+  --btn-icon-color-dark: rgb(196, 196, 204);
+  --timer-color-dark: #FFFFFF;
+  --btn-bg-color-dark:#29292E;
+  --btn-select-color-dark:#0A3442;
+
+
+
   font-family: "Roboto", sans-serif;
 }
 
 body {
   height: 100vh;
   width: 100vw;
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
+
 
 button {
   background: transparent;
@@ -33,6 +43,7 @@ button {
 .container {
   display: flex;
   gap: 19.2rem;
+
 }
 
 .controlBtn.disabled svg path{
@@ -94,4 +105,51 @@ button {
 
 .sounds button.selected svg path {
   fill: var(--sound-btn-selected-color)
+}
+
+
+/* Icones Light e Dark Mode */
+
+.darkMode , .lightMode {
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+}
+
+.lightMode svg path {
+  fill: #FFFFFF;
+}
+
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Dark Mode */
+
+body.dark {
+  background-color: var(--bg-color-dark);
+}
+
+.timerDisplay.dark {
+  color: var(--timer-color-dark);
+}
+
+.timerControls.dark button svg path{
+  fill: var(--btn-icon-color-dark);
+}
+
+.sounds.dark button {
+  background-color: var(--btn-bg-color-dark);
+
+}
+
+.sounds.dark button svg path {
+  fill:var(--btn-icon-color-dark);
+
+}
+
+.sounds.dark button.selected {
+  background-color: var(--btn-select-color-dark);
+  
 }

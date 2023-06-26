@@ -22,5 +22,13 @@ const rainBtn = document.querySelector(".rain")
 const coffeeBtn = document.querySelector(".coffeeshop")
 const fireBtn = document.querySelector(".fireplace")
 
+// Mode Buttons
 
-export {displayMinutes, displaySeconds, playBtn, stopBtn, plusBtn, minusBtn, forestBtn, rainBtn,coffeeBtn,fireBtn}
+const sunBtn = document.querySelector(".lightMode")
+const moonBtn = document.querySelector(".darkMode")
+const body = document.querySelector(".body")
+const timerDisplay = document.querySelector(".timerDisplay")
+const timerControls = document.querySelector(".timerControls")
+const soundBtns = document.querySelector(".sounds")
+
+export {displayMinutes, displaySeconds, playBtn, stopBtn, plusBtn, minusBtn, forestBtn, rainBtn,coffeeBtn,fireBtn, sunBtn, moonBtn, body, timerDisplay, timerControls, soundBtns}
